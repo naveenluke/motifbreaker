@@ -95,7 +95,7 @@ RUN Rscript -e 'install.packages("hdf5r",configure.args="--with-hdf5=/usr/bin/h5
 # Install other CRAN
 # RUN Rscript -e 'install.packages(c("devtools", "ggplot2", "BiocManager", "Seurat", "rJava"))'
 # Install Bioconductor packages
-# RUN Rscript -e 'BiocManager::install(c("motifbreakR", "SingleCellExperiment",  "Rhdf5lib", "scater", "scran", "monocle", "DESeq2"))'
+RUN Rscript -e 'BiocManager::install(c("motifbreakR", "GenomicRanges", "rtracklayer", "SNPlocs.Hsapiens.dbSNP144.GRCh37"))'
 # Install Vennerable for Venn diagrams
 # RUN Rscript -e 'install.packages("Vennerable", repos="http://R-Forge.R-project.org")'
 # install github packages
